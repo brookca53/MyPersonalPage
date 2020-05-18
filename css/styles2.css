@@ -1,0 +1,37 @@
+/*
+    ABSOLUTE takes the element out of the flow of the web page.  But, then it can be postioned anywhere
+    on the web page.  The element is positioned ABSOLUTE to the body element.  UNLESS... there is a parent tag
+    that has a RELATIVE position put in it.  Then, the ABSOLUTE position is relative to that tag instead of 
+    the body tag.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+  }
+.second {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.third {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

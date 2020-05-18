@@ -1,0 +1,74 @@
+/* 
+    RELATIVE keeps the object in the flow and references the object's original position when moving it.
+    A left: 200px puts a 200px margin on the left side from its original postion, so the object shits to the right.
+
+    RELATIVE positioning adds a margin relative to where tye element should have been in the natural flow.
+
+    ABSOLUTE positioning adds a margin relative to its parent elemrnt.  In a document layout, a parent tag 
+    does not have to be the body tag.  It can be also be the closest tag that has a RELATIVE layout in it.
+
+*/
+
+body {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 30px;
+}
+
+.container {
+    position: relative;
+    background-color: gray; 
+    width: 300px;
+    height: 300px;
+}
+
+.container2 {
+    background-color: orange; 
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.first {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+  }
+.second {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    
+}
+
+.third {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 0;
+}
+
+.purple {
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+}
+
+h1 {
+    color: white;
+}
